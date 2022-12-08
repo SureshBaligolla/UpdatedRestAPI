@@ -1,0 +1,242 @@
+Request method:	POST
+Request URI:	https://platform.zikzuk.com/customer/api/customer?defaultUser=true&defaultOrg=true
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Accept=*/*
+				Content-Type=application/json; charset=UTF-8
+Cookies:		<none>
+Multiparts:		<none>
+Body:
+{
+    "custName": "Customer 34",
+    "email": "customer34@zikzuk.com",
+    "isTerPolAccepted": "true"
+}
+HTTP/1.1 200 OK
+Date: Thu, 08 Dec 2022 03:01:30 GMT
+Content-Type: application/json
+Transfer-Encoding: chunked
+Connection: keep-alive
+vary: Origin,Access-Control-Request-Method,Access-Control-Request-Headers
+operationtype: registerCustomer
+responsetype: success
+x-envoy-upstream-service-time: 844
+server: istio-envoy
+x-kong-upstream-latency: 844
+x-kong-proxy-latency: 0
+via: kong/3.0.1
+x-envoy-decorator-operation: kong-api.kong.svc.cluster.local:80/*
+
+{
+    "custId": "d9d6cd74-85e7-4916-9305-0604427b7494",
+    "custName": "Customer 34",
+    "email": "customer34@zikzuk.com",
+    "altEmail": null,
+    "phone": null,
+    "altContact": null,
+    "designation": null,
+    "address": null,
+    "gstNo": null,
+    "website": null,
+    "inTrialPeriod": false,
+    "status": "inactive",
+    "isTerPolAccepted": true,
+    "organisationsList": [
+        {
+            "orgId": "ef48bdef-9046-459e-9b39-360b1d117548",
+            "orgName": "Customer 34",
+            "email": "customer34@zikzuk.com",
+            "phone": null,
+            "designation": null,
+            "gstNo": null,
+            "panCard": null,
+            "addressList": null,
+            "cin": null,
+            "website": null,
+            "status": null,
+            "isTaxAppl": null,
+            "isPrimary": null,
+            "confServices": null,
+            "createdDt": null,
+            "updatedDt": null,
+            "createdBy": null,
+            "updatedBy": null
+        }
+    ],
+    "subscriptionList": null,
+    "createdDt": "2022-12-08T03:01:29.793+00:00",
+    "updatedDt": "2022-12-08T03:01:29.793+00:00",
+    "createdBy": null,
+    "updatedBy": null
+}
+Request method:	GET
+Request URI:	https://platform.zikzuk.com/customer/api/customer?customerName=Customer%2034
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Accept=*/*
+				Content-Type=application/json; charset=UTF-8
+Cookies:		<none>
+Multiparts:		<none>
+Body:			<none>
+HTTP/1.1 200 OK
+Date: Thu, 08 Dec 2022 03:01:32 GMT
+Content-Type: application/json
+Transfer-Encoding: chunked
+Connection: keep-alive
+vary: Origin,Access-Control-Request-Method,Access-Control-Request-Headers
+operationtype: getCustomer
+responsetype: success
+x-envoy-upstream-service-time: 455
+server: istio-envoy
+x-kong-upstream-latency: 456
+x-kong-proxy-latency: 0
+via: kong/3.0.1
+x-envoy-decorator-operation: kong-api.kong.svc.cluster.local:80/*
+
+{
+    "custId": "d9d6cd74-85e7-4916-9305-0604427b7494",
+    "custName": "Customer 34",
+    "email": "customer34@zikzuk.com",
+    "altEmail": null,
+    "phone": null,
+    "altContact": null,
+    "designation": null,
+    "address": null,
+    "gstNo": null,
+    "website": null,
+    "inTrialPeriod": false,
+    "status": "inactive",
+    "isTerPolAccepted": true,
+    "organisationsList": [
+        {
+            "orgId": "ef48bdef-9046-459e-9b39-360b1d117548",
+            "orgName": "Customer 34",
+            "email": "customer34@zikzuk.com",
+            "phone": null,
+            "designation": null,
+            "gstNo": null,
+            "panCard": null,
+            "addressList": null,
+            "cin": null,
+            "website": null,
+            "status": "inactive",
+            "isTaxAppl": null,
+            "isPrimary": false,
+            "confServices": null,
+            "createdDt": "2022-12-08T03:01:32.262+00:00",
+            "updatedDt": "2022-12-08T03:01:32.262+00:00",
+            "createdBy": null,
+            "updatedBy": null
+        }
+    ],
+    "subscriptionList": null,
+    "createdDt": "2022-12-08T03:01:29.793+00:00",
+    "updatedDt": "2022-12-08T03:01:29.793+00:00",
+    "createdBy": null,
+    "updatedBy": null
+}
+Request method:	GET
+Request URI:	https://platform.zikzuk.com/customer/api/customer?email=customer34%40zikzuk.com
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Accept=*/*
+				Content-Type=application/json; charset=UTF-8
+Cookies:		<none>
+Multiparts:		<none>
+Body:			<none>
+HTTP/1.1 200 OK
+Date: Thu, 08 Dec 2022 03:01:32 GMT
+Content-Type: application/json
+Transfer-Encoding: chunked
+Connection: keep-alive
+vary: Origin,Access-Control-Request-Method,Access-Control-Request-Headers
+operationtype: getCustomer
+responsetype: success
+x-envoy-upstream-service-time: 96
+server: istio-envoy
+x-kong-upstream-latency: 95
+x-kong-proxy-latency: 0
+via: kong/3.0.1
+x-envoy-decorator-operation: kong-api.kong.svc.cluster.local:80/*
+
+{
+    "custId": "d9d6cd74-85e7-4916-9305-0604427b7494",
+    "custName": "Customer 34",
+    "email": "customer34@zikzuk.com",
+    "altEmail": null,
+    "phone": null,
+    "altContact": null,
+    "designation": null,
+    "address": null,
+    "gstNo": null,
+    "website": null,
+    "inTrialPeriod": false,
+    "status": "inactive",
+    "isTerPolAccepted": true,
+    "organisationsList": [
+        {
+            "orgId": "ef48bdef-9046-459e-9b39-360b1d117548",
+            "orgName": "Customer 34",
+            "email": "customer34@zikzuk.com",
+            "phone": null,
+            "designation": null,
+            "gstNo": null,
+            "panCard": null,
+            "addressList": null,
+            "cin": null,
+            "website": null,
+            "status": "inactive",
+            "isTaxAppl": null,
+            "isPrimary": false,
+            "confServices": null,
+            "createdDt": "2022-12-08T03:01:32.772+00:00",
+            "updatedDt": "2022-12-08T03:01:32.772+00:00",
+            "createdBy": null,
+            "updatedBy": null
+        }
+    ],
+    "subscriptionList": null,
+    "createdDt": "2022-12-08T03:01:29.793+00:00",
+    "updatedDt": "2022-12-08T03:01:29.793+00:00",
+    "createdBy": null,
+    "updatedBy": null
+}
+Request method:	DELETE
+Request URI:	https://platform.zikzuk.com/customer/api/customer/d9d6cd74-85e7-4916-9305-0604427b7494
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Accept=*/*
+				Content-Type=application/json; charset=UTF-8
+Cookies:		<none>
+Multiparts:		<none>
+Body:			<none>
+HTTP/1.1 200 OK
+Date: Thu, 08 Dec 2022 03:01:33 GMT
+Content-Type: application/json
+Transfer-Encoding: chunked
+Connection: keep-alive
+vary: Origin,Access-Control-Request-Method,Access-Control-Request-Headers
+operationtype: deleteCustomer
+responsetype: success
+x-envoy-upstream-service-time: 357
+server: istio-envoy
+x-kong-upstream-latency: 357
+x-kong-proxy-latency: 1
+via: kong/3.0.1
+x-envoy-decorator-operation: kong-api.kong.svc.cluster.local:80/*
+
+{
+    "deleted": true
+}
