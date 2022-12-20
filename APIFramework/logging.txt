@@ -11,29 +11,33 @@ Cookies:		<none>
 Multiparts:		<none>
 Body:
 {
-    "custName": "Customer 42",
-    "email": "customer42@zikzuk.com",
+    "custName": "Customer 51",
+    "email": "customer51@zikzuk.com",
     "isTerPolAccepted": "true"
 }
 HTTP/1.1 200 OK
-Date: Fri, 16 Dec 2022 02:32:06 GMT
+Date: Tue, 20 Dec 2022 03:18:11 GMT
 Content-Type: application/json
 Transfer-Encoding: chunked
 Connection: keep-alive
+access-control-allow-credentials: true
+access-control-allow-methods: POST,PUT,GET, OPTIONS, DELETE,PATCH
+access-control-max-age: 3600
+access-control-allow-headers: Content-Type, Accept, X-Requested-With, remember-me
 vary: Origin,Access-Control-Request-Method,Access-Control-Request-Headers
 operationtype: registerCustomer
 responsetype: success
-x-envoy-upstream-service-time: 24
+x-envoy-upstream-service-time: 178
 server: istio-envoy
-x-kong-upstream-latency: 24
+x-kong-upstream-latency: 178
 x-kong-proxy-latency: 0
 via: kong/3.0.1
 x-envoy-decorator-operation: kong-api.kong.svc.cluster.local:80/*
 
 {
-    "custId": "b3b165b9-8eb2-4730-9d44-7ff8c1a6c90b",
-    "custName": "Customer 42",
-    "email": "customer42@zikzuk.com",
+    "custId": "da3190b6-30f9-4445-b02f-b2c0c81651a2",
+    "custName": "Customer 51",
+    "email": "customer51@zikzuk.com",
     "altEmail": null,
     "phone": null,
     "altContact": null,
@@ -46,9 +50,9 @@ x-envoy-decorator-operation: kong-api.kong.svc.cluster.local:80/*
     "isTerPolAccepted": true,
     "organisationsList": [
         {
-            "orgId": "b9df68c4-d561-4292-8891-64a3563e0299",
-            "orgName": "Customer 42",
-            "email": "customer42@zikzuk.com",
+            "orgId": "65fac82a-97c9-45d6-8947-c44bfe936489",
+            "orgName": "Customer 51",
+            "email": "customer51@zikzuk.com",
             "phone": null,
             "designation": null,
             "gstNo": null,
@@ -67,13 +71,13 @@ x-envoy-decorator-operation: kong-api.kong.svc.cluster.local:80/*
         }
     ],
     "subscriptionList": null,
-    "createdDt": 1671157926227,
-    "updatedDt": 1671157926227,
+    "createdDt": "2022-12-20 03:18:10",
+    "updatedDt": "2022-12-20 03:18:10",
     "createdBy": null,
     "updatedBy": null
 }
 Request method:	GET
-Request URI:	https://platform.zikzuk.com/customer/api/customer?customerName=Customer%2042
+Request URI:	https://platform.zikzuk.com/customer/api/customer?customerName=Customer%2051
 Proxy:			<none>
 Request params:	<none>
 Query params:	<none>
@@ -85,24 +89,28 @@ Cookies:		<none>
 Multiparts:		<none>
 Body:			<none>
 HTTP/1.1 200 OK
-Date: Fri, 16 Dec 2022 02:32:07 GMT
+Date: Tue, 20 Dec 2022 03:18:12 GMT
 Content-Type: application/json
 Transfer-Encoding: chunked
 Connection: keep-alive
+access-control-allow-credentials: true
+access-control-allow-methods: POST,PUT,GET, OPTIONS, DELETE,PATCH
+access-control-max-age: 3600
+access-control-allow-headers: Content-Type, Accept, X-Requested-With, remember-me
 vary: Origin,Access-Control-Request-Method,Access-Control-Request-Headers
 operationtype: getCustomer
 responsetype: success
-x-envoy-upstream-service-time: 12
+x-envoy-upstream-service-time: 34
 server: istio-envoy
-x-kong-upstream-latency: 12
+x-kong-upstream-latency: 34
 x-kong-proxy-latency: 0
 via: kong/3.0.1
 x-envoy-decorator-operation: kong-api.kong.svc.cluster.local:80/*
 
 {
-    "custId": "b3b165b9-8eb2-4730-9d44-7ff8c1a6c90b",
-    "custName": "Customer 42",
-    "email": "customer42@zikzuk.com",
+    "custId": "da3190b6-30f9-4445-b02f-b2c0c81651a2",
+    "custName": "Customer 51",
+    "email": "customer51@zikzuk.com",
     "altEmail": null,
     "phone": null,
     "altContact": null,
@@ -115,9 +123,9 @@ x-envoy-decorator-operation: kong-api.kong.svc.cluster.local:80/*
     "isTerPolAccepted": true,
     "organisationsList": [
         {
-            "orgId": "b9df68c4-d561-4292-8891-64a3563e0299",
-            "orgName": "Customer 42",
-            "email": "customer42@zikzuk.com",
+            "orgId": "65fac82a-97c9-45d6-8947-c44bfe936489",
+            "orgName": "Customer 51",
+            "email": "customer51@zikzuk.com",
             "phone": null,
             "designation": null,
             "gstNo": null,
@@ -129,20 +137,20 @@ x-envoy-decorator-operation: kong-api.kong.svc.cluster.local:80/*
             "isTaxAppl": null,
             "isPrimary": false,
             "confServices": null,
-            "createdDt": 1671157927492,
-            "updatedDt": 1671157927492,
+            "createdDt": "2022-12-20 03:18:12",
+            "updatedDt": "2022-12-20 03:18:12",
             "createdBy": null,
             "updatedBy": null
         }
     ],
     "subscriptionList": null,
-    "createdDt": 1671157926227,
-    "updatedDt": 1671157926227,
+    "createdDt": "2022-12-20 03:18:10",
+    "updatedDt": "2022-12-20 03:18:10",
     "createdBy": null,
     "updatedBy": null
 }
 Request method:	GET
-Request URI:	https://platform.zikzuk.com/customer/api/customer?email=customer42%40zikzuk.com
+Request URI:	https://platform.zikzuk.com/customer/api/customer?email=customer51%40zikzuk.com
 Proxy:			<none>
 Request params:	<none>
 Query params:	<none>
@@ -154,24 +162,28 @@ Cookies:		<none>
 Multiparts:		<none>
 Body:			<none>
 HTTP/1.1 200 OK
-Date: Fri, 16 Dec 2022 02:32:07 GMT
+Date: Tue, 20 Dec 2022 03:18:12 GMT
 Content-Type: application/json
 Transfer-Encoding: chunked
 Connection: keep-alive
+access-control-allow-credentials: true
+access-control-allow-methods: POST,PUT,GET, OPTIONS, DELETE,PATCH
+access-control-max-age: 3600
+access-control-allow-headers: Content-Type, Accept, X-Requested-With, remember-me
 vary: Origin,Access-Control-Request-Method,Access-Control-Request-Headers
 operationtype: getCustomer
 responsetype: success
-x-envoy-upstream-service-time: 66
+x-envoy-upstream-service-time: 22
 server: istio-envoy
-x-kong-upstream-latency: 66
+x-kong-upstream-latency: 22
 x-kong-proxy-latency: 0
 via: kong/3.0.1
 x-envoy-decorator-operation: kong-api.kong.svc.cluster.local:80/*
 
 {
-    "custId": "b3b165b9-8eb2-4730-9d44-7ff8c1a6c90b",
-    "custName": "Customer 42",
-    "email": "customer42@zikzuk.com",
+    "custId": "da3190b6-30f9-4445-b02f-b2c0c81651a2",
+    "custName": "Customer 51",
+    "email": "customer51@zikzuk.com",
     "altEmail": null,
     "phone": null,
     "altContact": null,
@@ -184,9 +196,9 @@ x-envoy-decorator-operation: kong-api.kong.svc.cluster.local:80/*
     "isTerPolAccepted": true,
     "organisationsList": [
         {
-            "orgId": "b9df68c4-d561-4292-8891-64a3563e0299",
-            "orgName": "Customer 42",
-            "email": "customer42@zikzuk.com",
+            "orgId": "65fac82a-97c9-45d6-8947-c44bfe936489",
+            "orgName": "Customer 51",
+            "email": "customer51@zikzuk.com",
             "phone": null,
             "designation": null,
             "gstNo": null,
@@ -198,20 +210,20 @@ x-envoy-decorator-operation: kong-api.kong.svc.cluster.local:80/*
             "isTaxAppl": null,
             "isPrimary": false,
             "confServices": null,
-            "createdDt": 1671157927820,
-            "updatedDt": 1671157927820,
+            "createdDt": "2022-12-20 03:18:12",
+            "updatedDt": "2022-12-20 03:18:12",
             "createdBy": null,
             "updatedBy": null
         }
     ],
     "subscriptionList": null,
-    "createdDt": 1671157926227,
-    "updatedDt": 1671157926227,
+    "createdDt": "2022-12-20 03:18:10",
+    "updatedDt": "2022-12-20 03:18:10",
     "createdBy": null,
     "updatedBy": null
 }
 Request method:	DELETE
-Request URI:	https://platform.zikzuk.com/customer/api/customer/b3b165b9-8eb2-4730-9d44-7ff8c1a6c90b
+Request URI:	https://platform.zikzuk.com/customer/api/customer/da3190b6-30f9-4445-b02f-b2c0c81651a2
 Proxy:			<none>
 Request params:	<none>
 Query params:	<none>
@@ -223,16 +235,20 @@ Cookies:		<none>
 Multiparts:		<none>
 Body:			<none>
 HTTP/1.1 200 OK
-Date: Fri, 16 Dec 2022 02:32:08 GMT
+Date: Tue, 20 Dec 2022 03:18:13 GMT
 Content-Type: application/json
 Transfer-Encoding: chunked
 Connection: keep-alive
+access-control-allow-credentials: true
+access-control-allow-methods: POST,PUT,GET, OPTIONS, DELETE,PATCH
+access-control-max-age: 3600
+access-control-allow-headers: Content-Type, Accept, X-Requested-With, remember-me
 vary: Origin,Access-Control-Request-Method,Access-Control-Request-Headers
 operationtype: deleteCustomer
 responsetype: success
-x-envoy-upstream-service-time: 318
+x-envoy-upstream-service-time: 44
 server: istio-envoy
-x-kong-upstream-latency: 318
+x-kong-upstream-latency: 44
 x-kong-proxy-latency: 0
 via: kong/3.0.1
 x-envoy-decorator-operation: kong-api.kong.svc.cluster.local:80/*

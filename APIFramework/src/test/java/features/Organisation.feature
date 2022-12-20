@@ -1,11 +1,29 @@
 @CreateOrganisation 
 Feature: Validating Organisation API's 
 
-@Organisation 
-Scenario: Verify if Customer is being Succesfully added using PostAPI 
-	Given the customer is allowed to sync with us 
-	When the New company sync success 
-	Then the Organisation is created
-	And Org_id is createdin the Org collection
-	And Customer_id is added to the Org collection
+@AddOrganisation 
+Scenario Outline: 
+	Verify if Customer is being add Organisation Succesfully added using PostAPI 
 	
+	Given the customer is allowed to sync with customer ID "<orgName>" "<email>" 
+	When the user calls "registerOrganisation" with "POST" http request new company Organisation is created 
+	Then the API Organisation call got success with status code 200 
+	
+	
+	Examples: 
+		| orgName     | email                |
+		| Orgname 50 | Orguser50@zikzuk.com |
+		
+
+				
+ @OrganisationByName @Regression @SomkeTesting
+  Scenario: Verify Customer by customerName  customerEmail being Succesfully added using GETAPI.
+    Given GetOrganisation Payload
+    When the user calls "registerOrganisation" with "GET" http request new company Organisation is created 
+    Then the API Organisation call got success with status code 200 
+    And "orgName" in response body is "Orgname 50" Organisation api
+    And "email" in response body is "Orguser50@zikzuk.com" Organisation api
+
+
+      
+      

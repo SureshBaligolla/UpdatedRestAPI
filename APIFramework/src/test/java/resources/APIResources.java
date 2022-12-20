@@ -7,8 +7,9 @@ public enum APIResources {
 	GetCustName("/customer/api/customer?customerName="),
 	GetCustemail("/customer/api/customer?email="),
 	deletePlaceAPI("/customer/api/customer/"),
-	AddCustomer("/customer/api/customer?"+"defaultUser=true&defaultOrg=true");
-	
+	AddCustomer("/customer/api/customer?"+"defaultUser=true&defaultOrg=true"),
+	registerOrganisation("/customer/api/organisation/"),
+	AddUser("/user/api/users?defaultUser=false");
 	
 	
 	
