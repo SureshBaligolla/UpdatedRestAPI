@@ -42,8 +42,9 @@ public class OrganisationStep extends Utils {
 		System.out.println(res);
 	}
 
-	@When("the Organisation calls {string} with {string} http request new company Organisation is created")
-	public void the_user_calls_with_http_request_new_company_User_is_created(String resource, String method) {
+
+	@When("the user calls {string} with {string} http request new company Organisation is created")
+	public void the_user_calls_with_http_request_new_company_Organisation_is_created(String resource, String method) {
 
 		APIResources resourceAPI = APIResources.valueOf(resource);
 		System.out.println(resourceAPI.getResource());
@@ -51,7 +52,7 @@ public class OrganisationStep extends Utils {
 		resspec = new ResponseSpecBuilder().expectStatusCode(200).expectContentType(ContentType.JSON).build();
 
 		if (method.equalsIgnoreCase("POST"))
-			response = res.when().post(resourceAPI.getResource());
+			response = res.when().post(resourceAPI.getResource()+"43b1e78d-63a2-468f-9f5d-cc5de7d7083d");
 		else if (method.equalsIgnoreCase("GET"))
 			response = res.when()
 			

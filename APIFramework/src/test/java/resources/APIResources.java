@@ -9,7 +9,11 @@ public enum APIResources {
 	deletePlaceAPI("/customer/api/customer/"),
 	AddCustomer("/customer/api/customer?"+"defaultUser=true&defaultOrg=true"),
 	registerOrganisation("/customer/api/organisation/"),
-	AddUser("/user/api/users?defaultUser=false");
+	AddUser("/user/api/users?defaultUser=false"),
+	GetUserName("user/api/user?userName="),
+	GetUserEmail("user/api/user?email="),
+	deleteUserAPI("/user/api/user/");
+	
 	
 	
 	

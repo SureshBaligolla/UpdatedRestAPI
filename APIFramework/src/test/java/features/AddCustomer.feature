@@ -41,6 +41,6 @@ Feature: Validating Customer API's
   @DeleteCustomer @Regression @SomkeTesting
   Scenario: Verify if Delete Place functionality is working
     Given DeletePlace Payload
-    When user calls the "deletePlaceAPI" with delete http request
+    When Customer calls the "deletePlaceAPI" with delete http request
     Then the API call got success with status code 200
 

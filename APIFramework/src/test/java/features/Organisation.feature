@@ -12,18 +12,19 @@ Scenario Outline:
 	
 	Examples: 
 		| orgName     | email                |
-		| Orgname 50 | Orguser50@zikzuk.com |
+		| Orguser53 | Orguser53@zikzuk.com |
 		
-
-				
- @OrganisationByName @Regression @SomkeTesting
-  Scenario: Verify Customer by customerName  customerEmail being Succesfully added using GETAPI.
-    Given GetOrganisation Payload
-    When the user calls "registerOrganisation" with "GET" http request new company Organisation is created 
-    Then the API Organisation call got success with status code 200 
-    And "orgName" in response body is "Orgname 50" Organisation api
-    And "email" in response body is "Orguser50@zikzuk.com" Organisation api
-
-
-      
+		
+		
+		@OrganisationByName @Regression @SomkeTesting
+		Scenario:
+		Verify Customer by customerName  customerEmail being Succesfully added using GETAPI. 
+			Given GetOrganisation Payload 
+			When the user calls "registerOrganisation" with "GET" http request new company Organisation is created 
+			Then the API Organisation call got success with status code 200 
+			And "orgName" in response body is "Orguser53" Organisation api 
+			And "email" in response body is "Orguser53@zikzuk.com" Organisation api 
+			
+			
+			
       

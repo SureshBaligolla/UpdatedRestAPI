@@ -33,6 +33,7 @@ public class AddCustomerStep extends Utils {
 	CustomerBuild data = new CustomerBuild();
 	static String custName;
 	static String custId;
+	static String UserID;
 
 	@Given("Add Customer Payload with {string} {string} {string}")
 	public void add_Customer_Payload_with(String name, String email, String isTerPolAccepted) throws IOException {
@@ -43,7 +44,7 @@ public class AddCustomerStep extends Utils {
 	}
 
 	@When("user calls {string} with {string} http request")
-	public void user_calls_with_http_request(String resource, String method) {
+	public void user_calls_with_http_request(String resource, String method)throws Exception {
 		// Write code here that turns the phrase above into concrete actions
 		// constructor will be called with value of resource which you pass
 		APIResources resourceAPI = APIResources.valueOf(resource);
@@ -61,19 +62,24 @@ public class AddCustomerStep extends Utils {
 	}
 
 	@Then("the API call got success with status code {int}")
-	public void the_API_call_got_success_with_status_code(Integer int1) {
+	public void the_API_call_got_success_with_status_code(Integer int1) throws Exception{
 		// Write code here that turns the phrase above into concrete actions
 		assertEquals(response.getStatusCode(), 200);
 
 	}
 
 	@Then("{string} in response body is {string}")
-	public void in_response_body_is(String keyValue, String Expectedvalue) {
+	public void in_response_body_is(String keyValue, String Expectedvalue)throws Exception {
 		// Write code here that turns the phrase above into concrete actions
 
 		String actualName1 = getJsonPath(response, keyValue);
 		System.out.println(Expectedvalue + "=" + actualName1);
-		custId = getJsonPath(response, "custId");
+		try {
+			custId = getJsonPath(response, "custId");
+		} catch (Exception e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
 
 	}
 
@@ -86,7 +92,7 @@ public class AddCustomerStep extends Utils {
 	}
 
 	@When("user call {string} {string} with {string} http request")
-	public void user_call_with_http_request(String resource, String Quer, String method) {
+	public void user_call_with_http_request(String resource, String Quer, String method)throws Exception {
 		APIResources resourceAPI = APIResources.valueOf(resource);
 		System.out.println(resourceAPI.getResource() + Quer);
 		if (method.equalsIgnoreCase("POST"))
@@ -99,7 +105,7 @@ public class AddCustomerStep extends Utils {
 
 	@Given("^Add Customer \"([^\"]*)\" \"([^\"]*)\" \"([^\"]*)\"$")
 	public void add_customer_something_something_something(String custname, String id, String isterpolaccepted)
-			throws Throwable {
+			throws Exception {
 
 		UserRegistrationSuccessful(custname, id, isterpolaccepted);
 
@@ -114,8 +120,8 @@ public class AddCustomerStep extends Utils {
 
 	}
 
-	@When("user calls the {string} with delete http request")
-	public void user_calls_the_with_delete_http_request(String resource) {
+	@When("Customer calls the {string} with delete http request")
+	public void Customer_calls_the_with_delete_http_request(String resource) throws Exception {
 		// Write code here that turns the phrase above into concrete actions
 
 		APIResources resourceAPI = APIResources.valueOf(resource);
