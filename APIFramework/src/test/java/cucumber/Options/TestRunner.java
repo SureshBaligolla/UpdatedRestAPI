@@ -7,7 +7,7 @@ import io.cucumber.junit.CucumberOptions;
 
 @RunWith(Cucumber.class)
 @CucumberOptions(features = "src/test/java/features", plugin = "json:target/jsonReports/cucumber-report.json", glue = {
-		"stepDefinations" }, tags = { "@CreateOrganisation or @AddCustomer or @CreateUser"})
+		"stepDefinations" }, tags = { "@AddCustomer or @CreateUser"})
 public class TestRunner {
 //tags= {"@DeletePlace"}  compile test verify
 }

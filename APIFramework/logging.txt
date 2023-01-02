@@ -16,7 +16,7 @@ Body:
     "isTerPolAccepted": "true"
 }
 HTTP/1.1 200 OK
-Date: Wed, 21 Dec 2022 03:36:07 GMT
+Date: Fri, 30 Dec 2022 03:41:51 GMT
 Content-Type: application/json
 Transfer-Encoding: chunked
 Connection: keep-alive
@@ -27,15 +27,15 @@ access-control-allow-headers: Content-Type, Accept, X-Requested-With, remember-m
 vary: Origin,Access-Control-Request-Method,Access-Control-Request-Headers
 operationtype: registerCustomer
 responsetype: success
-x-envoy-upstream-service-time: 625
+x-envoy-upstream-service-time: 1353
 server: istio-envoy
-x-kong-upstream-latency: 625
-x-kong-proxy-latency: 1
+x-kong-upstream-latency: 1354
+x-kong-proxy-latency: 0
 via: kong/3.0.1
 x-envoy-decorator-operation: kong-api.kong.svc.cluster.local:80/*
 
 {
-    "custId": "2e10a618-bb3c-41a8-af7f-303076b4deb7",
+    "custId": "6ee5f8a7-9883-4743-bd9d-91a0c38abad4",
     "custName": "Customer 51",
     "email": "customer51@zikzuk.com",
     "altEmail": null,
@@ -50,7 +50,7 @@ x-envoy-decorator-operation: kong-api.kong.svc.cluster.local:80/*
     "isTerPolAccepted": true,
     "organisationsList": [
         {
-            "orgId": "e7c667aa-018d-47db-8651-6b594d9dc954",
+            "orgId": "454662c6-3177-4db9-8038-fe2c48a78bfb",
             "orgName": "Customer 51",
             "email": "customer51@zikzuk.com",
             "phone": null,
@@ -58,6 +58,7 @@ x-envoy-decorator-operation: kong-api.kong.svc.cluster.local:80/*
             "gstNo": null,
             "panCard": null,
             "addressList": null,
+            "categoryList": null,
             "cin": null,
             "website": null,
             "status": null,
@@ -71,8 +72,8 @@ x-envoy-decorator-operation: kong-api.kong.svc.cluster.local:80/*
         }
     ],
     "subscriptionList": null,
-    "createdDt": "2022-12-21 03:36:07",
-    "updatedDt": "2022-12-21 03:36:07",
+    "createdDt": "2022-12-30 03:41:50",
+    "updatedDt": "2022-12-30 03:41:50",
     "createdBy": null,
     "updatedBy": null
 }
@@ -89,7 +90,7 @@ Cookies:		<none>
 Multiparts:		<none>
 Body:			<none>
 HTTP/1.1 200 OK
-Date: Wed, 21 Dec 2022 03:36:09 GMT
+Date: Fri, 30 Dec 2022 03:41:53 GMT
 Content-Type: application/json
 Transfer-Encoding: chunked
 Connection: keep-alive
@@ -100,15 +101,15 @@ access-control-allow-headers: Content-Type, Accept, X-Requested-With, remember-m
 vary: Origin,Access-Control-Request-Method,Access-Control-Request-Headers
 operationtype: getCustomer
 responsetype: success
-x-envoy-upstream-service-time: 31
+x-envoy-upstream-service-time: 612
 server: istio-envoy
-x-kong-upstream-latency: 24
+x-kong-upstream-latency: 612
 x-kong-proxy-latency: 0
 via: kong/3.0.1
 x-envoy-decorator-operation: kong-api.kong.svc.cluster.local:80/*
 
 {
-    "custId": "2e10a618-bb3c-41a8-af7f-303076b4deb7",
+    "custId": "6ee5f8a7-9883-4743-bd9d-91a0c38abad4",
     "custName": "Customer 51",
     "email": "customer51@zikzuk.com",
     "altEmail": null,
@@ -123,7 +124,7 @@ x-envoy-decorator-operation: kong-api.kong.svc.cluster.local:80/*
     "isTerPolAccepted": true,
     "organisationsList": [
         {
-            "orgId": "e7c667aa-018d-47db-8651-6b594d9dc954",
+            "orgId": "454662c6-3177-4db9-8038-fe2c48a78bfb",
             "orgName": "Customer 51",
             "email": "customer51@zikzuk.com",
             "phone": null,
@@ -131,21 +132,22 @@ x-envoy-decorator-operation: kong-api.kong.svc.cluster.local:80/*
             "gstNo": null,
             "panCard": null,
             "addressList": null,
+            "categoryList": null,
             "cin": null,
             "website": null,
             "status": "inactive",
             "isTaxAppl": null,
             "isPrimary": false,
             "confServices": null,
-            "createdDt": "2022-12-21 03:36:09",
-            "updatedDt": "2022-12-21 03:36:09",
+            "createdDt": "2022-12-30 03:41:53",
+            "updatedDt": "2022-12-30 03:41:53",
             "createdBy": null,
             "updatedBy": null
         }
     ],
     "subscriptionList": null,
-    "createdDt": "2022-12-21 03:36:07",
-    "updatedDt": "2022-12-21 03:36:07",
+    "createdDt": "2022-12-30 03:41:50",
+    "updatedDt": "2022-12-30 03:41:50",
     "createdBy": null,
     "updatedBy": null
 }
@@ -162,7 +164,7 @@ Cookies:		<none>
 Multiparts:		<none>
 Body:			<none>
 HTTP/1.1 200 OK
-Date: Wed, 21 Dec 2022 03:36:13 GMT
+Date: Fri, 30 Dec 2022 03:41:53 GMT
 Content-Type: application/json
 Transfer-Encoding: chunked
 Connection: keep-alive
@@ -173,15 +175,15 @@ access-control-allow-headers: Content-Type, Accept, X-Requested-With, remember-m
 vary: Origin,Access-Control-Request-Method,Access-Control-Request-Headers
 operationtype: getCustomer
 responsetype: success
-x-envoy-upstream-service-time: 3068
+x-envoy-upstream-service-time: 46
 server: istio-envoy
-x-kong-upstream-latency: 3065
-x-kong-proxy-latency: 3
+x-kong-upstream-latency: 46
+x-kong-proxy-latency: 1
 via: kong/3.0.1
 x-envoy-decorator-operation: kong-api.kong.svc.cluster.local:80/*
 
 {
-    "custId": "2e10a618-bb3c-41a8-af7f-303076b4deb7",
+    "custId": "6ee5f8a7-9883-4743-bd9d-91a0c38abad4",
     "custName": "Customer 51",
     "email": "customer51@zikzuk.com",
     "altEmail": null,
@@ -196,7 +198,7 @@ x-envoy-decorator-operation: kong-api.kong.svc.cluster.local:80/*
     "isTerPolAccepted": true,
     "organisationsList": [
         {
-            "orgId": "e7c667aa-018d-47db-8651-6b594d9dc954",
+            "orgId": "454662c6-3177-4db9-8038-fe2c48a78bfb",
             "orgName": "Customer 51",
             "email": "customer51@zikzuk.com",
             "phone": null,
@@ -204,26 +206,27 @@ x-envoy-decorator-operation: kong-api.kong.svc.cluster.local:80/*
             "gstNo": null,
             "panCard": null,
             "addressList": null,
+            "categoryList": null,
             "cin": null,
             "website": null,
             "status": "inactive",
             "isTaxAppl": null,
             "isPrimary": false,
             "confServices": null,
-            "createdDt": "2022-12-21 03:36:12",
-            "updatedDt": "2022-12-21 03:36:12",
+            "createdDt": "2022-12-30 03:41:53",
+            "updatedDt": "2022-12-30 03:41:53",
             "createdBy": null,
             "updatedBy": null
         }
     ],
     "subscriptionList": null,
-    "createdDt": "2022-12-21 03:36:07",
-    "updatedDt": "2022-12-21 03:36:07",
+    "createdDt": "2022-12-30 03:41:50",
+    "updatedDt": "2022-12-30 03:41:50",
     "createdBy": null,
     "updatedBy": null
 }
 Request method:	DELETE
-Request URI:	https://platform.zikzuk.com/customer/api/customer/2e10a618-bb3c-41a8-af7f-303076b4deb7
+Request URI:	https://platform.zikzuk.com/customer/api/customer/6ee5f8a7-9883-4743-bd9d-91a0c38abad4
 Proxy:			<none>
 Request params:	<none>
 Query params:	<none>
@@ -235,7 +238,7 @@ Cookies:		<none>
 Multiparts:		<none>
 Body:			<none>
 HTTP/1.1 200 OK
-Date: Wed, 21 Dec 2022 03:36:13 GMT
+Date: Fri, 30 Dec 2022 03:41:54 GMT
 Content-Type: application/json
 Transfer-Encoding: chunked
 Connection: keep-alive
@@ -246,10 +249,10 @@ access-control-allow-headers: Content-Type, Accept, X-Requested-With, remember-m
 vary: Origin,Access-Control-Request-Method,Access-Control-Request-Headers
 operationtype: deleteCustomer
 responsetype: success
-x-envoy-upstream-service-time: 29
+x-envoy-upstream-service-time: 670
 server: istio-envoy
-x-kong-upstream-latency: 26
-x-kong-proxy-latency: 0
+x-kong-upstream-latency: 670
+x-kong-proxy-latency: 1
 via: kong/3.0.1
 x-envoy-decorator-operation: kong-api.kong.svc.cluster.local:80/*
 
@@ -269,11 +272,11 @@ Cookies:		<none>
 Multiparts:		<none>
 Body:
 {
-    "orgName": "Orguser52",
-    "email": "Orguser52@zikzuk.com"
+    "orgName": "Orguser60",
+    "email": "Orguser60@zikzuk.com"
 }
 HTTP/1.1 200 OK
-Date: Wed, 21 Dec 2022 03:36:13 GMT
+Date: Fri, 30 Dec 2022 03:41:55 GMT
 Content-Type: application/json
 Transfer-Encoding: chunked
 Connection: keep-alive
@@ -284,9 +287,9 @@ access-control-allow-headers: Content-Type, Accept, X-Requested-With, remember-m
 vary: Origin,Access-Control-Request-Method,Access-Control-Request-Headers
 operationtype: registerOrganisation
 responsetype: error
-x-envoy-upstream-service-time: 39
+x-envoy-upstream-service-time: 577
 server: istio-envoy
-x-kong-upstream-latency: 33
+x-kong-upstream-latency: 577
 x-kong-proxy-latency: 0
 via: kong/3.0.1
 x-envoy-decorator-operation: kong-api.kong.svc.cluster.local:80/*
@@ -315,6 +318,7 @@ x-envoy-decorator-operation: kong-api.kong.svc.cluster.local:80/*
             "gstNo": null,
             "panCard": null,
             "addressList": null,
+            "categoryList": null,
             "cin": null,
             "website": null,
             "status": "inactive",
@@ -335,6 +339,7 @@ x-envoy-decorator-operation: kong-api.kong.svc.cluster.local:80/*
             "gstNo": null,
             "panCard": null,
             "addressList": null,
+            "categoryList": null,
             "cin": null,
             "website": null,
             "status": "inactive",
@@ -355,6 +360,7 @@ x-envoy-decorator-operation: kong-api.kong.svc.cluster.local:80/*
             "gstNo": null,
             "panCard": null,
             "addressList": null,
+            "categoryList": null,
             "cin": null,
             "website": null,
             "status": "deleted",
@@ -375,6 +381,7 @@ x-envoy-decorator-operation: kong-api.kong.svc.cluster.local:80/*
             "gstNo": null,
             "panCard": null,
             "addressList": null,
+            "categoryList": null,
             "cin": null,
             "website": null,
             "status": "deleted",
@@ -395,6 +402,7 @@ x-envoy-decorator-operation: kong-api.kong.svc.cluster.local:80/*
             "gstNo": null,
             "panCard": null,
             "addressList": null,
+            "categoryList": null,
             "cin": null,
             "website": null,
             "status": "inactive",
@@ -415,6 +423,7 @@ x-envoy-decorator-operation: kong-api.kong.svc.cluster.local:80/*
             "gstNo": null,
             "panCard": null,
             "addressList": null,
+            "categoryList": null,
             "cin": null,
             "website": null,
             "status": "inactive",
@@ -435,6 +444,7 @@ x-envoy-decorator-operation: kong-api.kong.svc.cluster.local:80/*
             "gstNo": null,
             "panCard": null,
             "addressList": null,
+            "categoryList": null,
             "cin": null,
             "website": null,
             "status": "inactive",
@@ -455,6 +465,7 @@ x-envoy-decorator-operation: kong-api.kong.svc.cluster.local:80/*
             "gstNo": null,
             "panCard": null,
             "addressList": null,
+            "categoryList": null,
             "cin": null,
             "website": null,
             "status": "deleted",
@@ -475,6 +486,7 @@ x-envoy-decorator-operation: kong-api.kong.svc.cluster.local:80/*
             "gstNo": null,
             "panCard": null,
             "addressList": null,
+            "categoryList": null,
             "cin": null,
             "website": null,
             "status": "inactive",
@@ -495,6 +507,7 @@ x-envoy-decorator-operation: kong-api.kong.svc.cluster.local:80/*
             "gstNo": null,
             "panCard": null,
             "addressList": null,
+            "categoryList": null,
             "cin": null,
             "website": null,
             "status": "inactive",
@@ -515,6 +528,7 @@ x-envoy-decorator-operation: kong-api.kong.svc.cluster.local:80/*
             "gstNo": null,
             "panCard": null,
             "addressList": null,
+            "categoryList": null,
             "cin": null,
             "website": null,
             "status": "inactive",
@@ -523,6 +537,174 @@ x-envoy-decorator-operation: kong-api.kong.svc.cluster.local:80/*
             "confServices": null,
             "createdDt": "2022-12-21 03:36:13",
             "updatedDt": "2022-12-21 03:36:13",
+            "createdBy": null,
+            "updatedBy": null
+        },
+        {
+            "orgId": "2abf4e84-1650-405b-835b-13650705e0c5",
+            "orgName": "Orguser53",
+            "email": "Orguser53@zikzuk.com",
+            "phone": null,
+            "designation": null,
+            "gstNo": null,
+            "panCard": null,
+            "addressList": null,
+            "categoryList": null,
+            "cin": null,
+            "website": null,
+            "status": "inactive",
+            "isTaxAppl": null,
+            "isPrimary": false,
+            "confServices": null,
+            "createdDt": "2022-12-22 03:40:30",
+            "updatedDt": "2022-12-22 03:40:30",
+            "createdBy": null,
+            "updatedBy": null
+        },
+        {
+            "orgId": "c0f2db87-5f61-40b4-9d34-f416fc22e715",
+            "orgName": "Orguser54",
+            "email": "Orguser54@zikzuk.com",
+            "phone": null,
+            "designation": null,
+            "gstNo": null,
+            "panCard": null,
+            "addressList": null,
+            "categoryList": null,
+            "cin": null,
+            "website": null,
+            "status": "inactive",
+            "isTaxAppl": null,
+            "isPrimary": false,
+            "confServices": null,
+            "createdDt": "2022-12-23 03:20:00",
+            "updatedDt": "2022-12-23 03:20:00",
+            "createdBy": null,
+            "updatedBy": null
+        },
+        {
+            "orgId": "1f34898c-6353-45f7-a2f6-0b660dbd2b61",
+            "orgName": "Orguser55",
+            "email": "Orguser55@zikzuk.com",
+            "phone": null,
+            "designation": null,
+            "gstNo": null,
+            "panCard": null,
+            "addressList": null,
+            "categoryList": null,
+            "cin": null,
+            "website": null,
+            "status": "inactive",
+            "isTaxAppl": null,
+            "isPrimary": false,
+            "confServices": null,
+            "createdDt": "2022-12-26 03:30:12",
+            "updatedDt": "2022-12-26 03:30:12",
+            "createdBy": null,
+            "updatedBy": null
+        },
+        {
+            "orgId": "0fd897e0-20b3-4c59-b624-217908ab0517",
+            "orgName": "Orguser56",
+            "email": "Orguser56@zikzuk.com",
+            "phone": null,
+            "designation": null,
+            "gstNo": null,
+            "panCard": null,
+            "addressList": null,
+            "categoryList": null,
+            "cin": null,
+            "website": null,
+            "status": "inactive",
+            "isTaxAppl": null,
+            "isPrimary": false,
+            "confServices": null,
+            "createdDt": "2022-12-27 03:42:02",
+            "updatedDt": "2022-12-27 03:42:02",
+            "createdBy": null,
+            "updatedBy": null
+        },
+        {
+            "orgId": "bbf2babd-1761-4186-b463-b0a69c127d6b",
+            "orgName": "Orguser57",
+            "email": "Orguser57@zikzuk.com",
+            "phone": null,
+            "designation": null,
+            "gstNo": null,
+            "panCard": null,
+            "addressList": null,
+            "categoryList": null,
+            "cin": null,
+            "website": null,
+            "status": "inactive",
+            "isTaxAppl": null,
+            "isPrimary": false,
+            "confServices": null,
+            "createdDt": "2022-12-27 03:43:13",
+            "updatedDt": "2022-12-27 03:43:13",
+            "createdBy": null,
+            "updatedBy": null
+        },
+        {
+            "orgId": "0894cf68-9aca-4a95-b2b6-7d4205ba5cc0",
+            "orgName": "Orguser58",
+            "email": null,
+            "phone": null,
+            "designation": null,
+            "gstNo": null,
+            "panCard": null,
+            "addressList": null,
+            "categoryList": null,
+            "cin": null,
+            "website": null,
+            "status": "inactive",
+            "isTaxAppl": null,
+            "isPrimary": false,
+            "confServices": null,
+            "createdDt": "2022-12-27 03:45:31",
+            "updatedDt": "2022-12-27 03:45:31",
+            "createdBy": null,
+            "updatedBy": null
+        },
+        {
+            "orgId": "85617193-4713-481d-9778-a3cd5575c07d",
+            "orgName": "Orguser59",
+            "email": "Orguser59@zikzuk.com",
+            "phone": null,
+            "designation": null,
+            "gstNo": null,
+            "panCard": null,
+            "addressList": null,
+            "categoryList": null,
+            "cin": null,
+            "website": null,
+            "status": "inactive",
+            "isTaxAppl": null,
+            "isPrimary": false,
+            "confServices": null,
+            "createdDt": "2022-12-27 03:46:16",
+            "updatedDt": "2022-12-27 03:46:16",
+            "createdBy": null,
+            "updatedBy": null
+        },
+        {
+            "orgId": "9fac905b-5757-4e33-92c8-aefaa5ccb853",
+            "orgName": "Orguser60",
+            "email": "Orguser60@zikzuk.com",
+            "phone": null,
+            "designation": null,
+            "gstNo": null,
+            "panCard": null,
+            "addressList": null,
+            "categoryList": null,
+            "cin": null,
+            "website": null,
+            "status": "inactive",
+            "isTaxAppl": null,
+            "isPrimary": false,
+            "confServices": null,
+            "createdDt": "2022-12-30 03:41:54",
+            "updatedDt": "2022-12-30 03:41:54",
             "createdBy": null,
             "updatedBy": null
         }
@@ -546,7 +728,7 @@ Cookies:		<none>
 Multiparts:		<none>
 Body:			<none>
 HTTP/1.1 200 OK
-Date: Wed, 21 Dec 2022 03:36:14 GMT
+Date: Fri, 30 Dec 2022 03:41:55 GMT
 Content-Type: application/json
 Transfer-Encoding: chunked
 Connection: keep-alive
@@ -557,10 +739,10 @@ access-control-allow-headers: Content-Type, Accept, X-Requested-With, remember-m
 vary: Origin,Access-Control-Request-Method,Access-Control-Request-Headers
 operationtype: getOrganisation
 responsetype: success
-x-envoy-upstream-service-time: 284
+x-envoy-upstream-service-time: 46
 server: istio-envoy
-x-kong-upstream-latency: 284
-x-kong-proxy-latency: 0
+x-kong-upstream-latency: 46
+x-kong-proxy-latency: 1
 via: kong/3.0.1
 x-envoy-decorator-operation: kong-api.kong.svc.cluster.local:80/*
 
@@ -573,6 +755,7 @@ x-envoy-decorator-operation: kong-api.kong.svc.cluster.local:80/*
     "gstNo": null,
     "panCard": null,
     "addressList": null,
+    "categoryList": null,
     "cin": null,
     "website": null,
     "status": "inactive",
@@ -603,7 +786,7 @@ Body:
     "userName": "userpro1"
 }
 HTTP/1.1 200 OK
-Date: Wed, 21 Dec 2022 03:36:15 GMT
+Date: Fri, 30 Dec 2022 03:41:57 GMT
 Content-Type: application/json
 Transfer-Encoding: chunked
 Connection: keep-alive
@@ -614,24 +797,24 @@ access-control-allow-headers: Content-Type, Accept, X-Requested-With, remember-m
 vary: Origin,Access-Control-Request-Method,Access-Control-Request-Headers
 operationtype: registerUser
 responsetype: success
-x-envoy-upstream-service-time: 581
+x-envoy-upstream-service-time: 1525
 server: istio-envoy
-x-kong-upstream-latency: 580
-x-kong-proxy-latency: 1
+x-kong-upstream-latency: 1524
+x-kong-proxy-latency: 0
 via: kong/3.0.1
 x-envoy-decorator-operation: kong-api.kong.svc.cluster.local:80/*
 
 {
-    "userId": "50f391d6-e318-4660-898f-8db7f51f779e",
+    "userId": "2191ac14-14f1-4ae9-8c95-16ed3c889f3b",
     "email": "userpro1@zikzuk.com",
     "userName": "userpro1",
     "mobile": null,
     "firstName": null,
     "middleName": null,
     "lastName": null,
-    "lastLogin": 1671593774738,
-    "createdDt": 1671593774738,
-    "updatedDt": 1671593774738,
+    "lastLogin": 1672371716549,
+    "createdDt": 1672371716549,
+    "updatedDt": 1672371716549,
     "createdBy": null,
     "updatedBy": null,
     "status": "inactive",
@@ -661,7 +844,7 @@ Cookies:		<none>
 Multiparts:		<none>
 Body:			<none>
 HTTP/1.1 200 OK
-Date: Wed, 21 Dec 2022 03:36:16 GMT
+Date: Fri, 30 Dec 2022 03:41:58 GMT
 Content-Type: application/json
 Transfer-Encoding: chunked
 Connection: keep-alive
@@ -672,24 +855,24 @@ access-control-allow-headers: Content-Type, Accept, X-Requested-With, remember-m
 vary: Origin,Access-Control-Request-Method,Access-Control-Request-Headers
 operationtype: getUserByName
 responsetype: success
-x-envoy-upstream-service-time: 597
+x-envoy-upstream-service-time: 561
 server: istio-envoy
-x-kong-upstream-latency: 596
-x-kong-proxy-latency: 1
+x-kong-upstream-latency: 561
+x-kong-proxy-latency: 0
 via: kong/3.0.1
 x-envoy-decorator-operation: kong-api.kong.svc.cluster.local:80/*
 
 {
-    "userId": "50f391d6-e318-4660-898f-8db7f51f779e",
+    "userId": "2191ac14-14f1-4ae9-8c95-16ed3c889f3b",
     "email": "userpro1@zikzuk.com",
     "userName": "userpro1",
     "mobile": null,
     "firstName": null,
     "middleName": null,
     "lastName": null,
-    "lastLogin": 1671593774738,
-    "createdDt": 1671593774738,
-    "updatedDt": 1671593774738,
+    "lastLogin": 1672371716549,
+    "createdDt": 1672371716549,
+    "updatedDt": 1672371716549,
     "createdBy": null,
     "updatedBy": null,
     "status": "inactive",
@@ -719,7 +902,7 @@ Cookies:		<none>
 Multiparts:		<none>
 Body:			<none>
 HTTP/1.1 200 OK
-Date: Wed, 21 Dec 2022 03:36:16 GMT
+Date: Fri, 30 Dec 2022 03:41:59 GMT
 Content-Type: application/json
 Transfer-Encoding: chunked
 Connection: keep-alive
@@ -730,24 +913,24 @@ access-control-allow-headers: Content-Type, Accept, X-Requested-With, remember-m
 vary: Origin,Access-Control-Request-Method,Access-Control-Request-Headers
 operationtype: getUserByEmail
 responsetype: success
-x-envoy-upstream-service-time: 12
+x-envoy-upstream-service-time: 532
 server: istio-envoy
-x-kong-upstream-latency: 12
+x-kong-upstream-latency: 532
 x-kong-proxy-latency: 0
 via: kong/3.0.1
 x-envoy-decorator-operation: kong-api.kong.svc.cluster.local:80/*
 
 {
-    "userId": "50f391d6-e318-4660-898f-8db7f51f779e",
+    "userId": "2191ac14-14f1-4ae9-8c95-16ed3c889f3b",
     "email": "userpro1@zikzuk.com",
     "userName": "userpro1",
     "mobile": null,
     "firstName": null,
     "middleName": null,
     "lastName": null,
-    "lastLogin": 1671593774738,
-    "createdDt": 1671593774738,
-    "updatedDt": 1671593774738,
+    "lastLogin": 1672371716549,
+    "createdDt": 1672371716549,
+    "updatedDt": 1672371716549,
     "createdBy": null,
     "updatedBy": null,
     "status": "inactive",
@@ -765,7 +948,7 @@ x-envoy-decorator-operation: kong-api.kong.svc.cluster.local:80/*
     "role": null
 }
 Request method:	DELETE
-Request URI:	https://platform.zikzuk.com/user/api/user/50f391d6-e318-4660-898f-8db7f51f779e
+Request URI:	https://platform.zikzuk.com/user/api/user/2191ac14-14f1-4ae9-8c95-16ed3c889f3b
 Proxy:			<none>
 Request params:	<none>
 Query params:	<none>
@@ -777,7 +960,7 @@ Cookies:		<none>
 Multiparts:		<none>
 Body:			<none>
 HTTP/1.1 200 OK
-Date: Wed, 21 Dec 2022 03:36:16 GMT
+Date: Fri, 30 Dec 2022 03:41:59 GMT
 Content-Type: application/json
 Transfer-Encoding: chunked
 Connection: keep-alive
@@ -788,9 +971,9 @@ access-control-allow-headers: Content-Type, Accept, X-Requested-With, remember-m
 vary: Origin,Access-Control-Request-Method,Access-Control-Request-Headers
 operationtype: deleteUser
 responsetype: success
-x-envoy-upstream-service-time: 17
+x-envoy-upstream-service-time: 21
 server: istio-envoy
-x-kong-upstream-latency: 17
+x-kong-upstream-latency: 21
 x-kong-proxy-latency: 0
 via: kong/3.0.1
 x-envoy-decorator-operation: kong-api.kong.svc.cluster.local:80/*
