@@ -38,11 +38,11 @@ public class Utils {
 
 	public static String getGlobalValue(String key) throws IOException {
 		Properties prop = new Properties();
-		// FileInputStream fis =new
-		// FileInputStream("C:\\suresh\\workspace\\APIFramework\\APIFramework\\src\\test\\java\\resources\\global.properties");
+		FileInputStream fis =new
+		FileInputStream("C:\\suresh\\workspace\\APIFramework\\APIFramework\\src\\test\\java\\resources\\global.properties");
 
-		FileInputStream fis = new FileInputStream(
-				"/Users/macmini/.jenkins/workspace/ZIS Smoke Testing/APIFramework/src/test/java/resources/global.properties");
+		//FileInputStream fis = new FileInputStream(
+		//		"/Users/macmini/.jenkins/workspace/ZIS Smoke Testing/APIFramework/src/test/java/resources/global.properties");
 
 		prop.load(fis);
 		return prop.getProperty(key);
