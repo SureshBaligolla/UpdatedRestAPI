@@ -47,7 +47,11 @@ public class Utils {
 
 	public static String getGlobalValue(String key) throws IOException {
 		Properties prop = new Properties();
-		FileInputStream fis = new FileInputStream(("user.dir")+"\\src\\test\\java\\resources\\global.properties");
+		
+		String path = System.getProperty("user.dir");
+		String otherFolder = path + "\\src\\test\\java\\resources\\global.properties";
+		
+		FileInputStream fis = new FileInputStream(otherFolder);
 
 		// FileInputStream fis = new FileInputStream(
 		// "/Users/macmini/.jenkins/workspace/ZIS Smoke

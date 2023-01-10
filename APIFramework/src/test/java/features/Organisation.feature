@@ -12,7 +12,7 @@ Scenario Outline:
 	
 	Examples: 
 		| orgName     | email              |
-		| Orguser66 | Orguser66@zikzuk.com |
+		| Orguser67 | Orguser67@zikzuk.com |
 		
 		
 		
@@ -22,8 +22,8 @@ Scenario Outline:
 			Given GetOrganisation Payload 
 			When the user calls "registerOrganisation" with "GET" http request new company Organisation is created 
 			Then the API Organisation call got success with status code 200 
-			And "orgName" in response body is "Orguser66" Organisation api 
-			And "email" in response body is "Orguser66@zikzuk.com" Organisation api 
+			And "orgName" in response body is "Orguser67" Organisation api 
+			And "email" in response body is "Orguser67@zikzuk.com" Organisation api 
 			
 			
 			
