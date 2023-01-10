@@ -12,7 +12,8 @@ public enum APIResources {
 	AddUser("/user/api/users?defaultUser=false"),
 	GetUserName("user/api/user?userName="),
 	GetUserEmail("user/api/user?email="),
-	deleteUserAPI("/user/api/user/");
+	deleteUserAPI("/user/api/user/"),
+	Authentication("/api/registerCustomer");
 	
 	
 	
