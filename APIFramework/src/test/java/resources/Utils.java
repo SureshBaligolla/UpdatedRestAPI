@@ -49,7 +49,7 @@ public class Utils {
 		Properties prop = new Properties();
 		
 		String path = System.getProperty("user.dir");
-		String otherFolder = path + "\\src\\test\\java\\resources\\global.properties";
+		String otherFolder = path + "/src/test/java/resources/global.properties";
 		
 		FileInputStream fis = new FileInputStream(otherFolder);
 
